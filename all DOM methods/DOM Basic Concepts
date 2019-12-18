@@ -1,0 +1,20 @@
+
+
+    // so first DOM is a way to manipulate the the html document on a browser each html page or simply a document is a collection of nodes arranged in atree like structure there is one root node and then his child nodes and then there child nodes thats why it is also called DOM tree. so every thing on DOM is a node but then what is an "node element" 
+
+	// node :- in HTML is simply used for everything it is a generic term and every node is an object.
+	// node element:- an node element is  specific type of node as there are many different type of nodes like comment node, input node paragraph node.
+
+   // difference between nodelist and htmlcollection
+	nodelist:- a nodelist is a collection of anykind of node present on the DOM tree but we can only refer to them using index and not name
+	HTMLcollection:- contains only Node elements and we can refer to them using indexes as well as names.
+	
+   // what is the differnce between the live and static nodelist
+	//  when we get a live nodelist the changes made to the dom are reflacted on the nodelist while it does not happens on static nodelist. all HTML collections are live
+
+   // can we use nodelist or HTMLcollection using array mathods well no so how should we do it
+	// so we can convert the both into an array by using Array.from(HTMLcollection or nodelist) and it will convert it into a array 
+
+  document.getElementByTag and document.getElementByClassName both return an HTML collections and HTML collections are all live
+
+  while document.getElementByName document.querySelectorAll returns a node list and ByName returns live while SelectorAll returns static list 

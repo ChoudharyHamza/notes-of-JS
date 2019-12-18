@@ -1,0 +1,21 @@
+
+
+	// ok so
+
+// BigInt:	
+		SO IN JAVASCRIPT WE CANNNOT have vnumbers larger then 2^54 or -2^53 so if we want words longer then this  like while performing cryptography we use BigInt it can store
+		variebles with arbitery length (just nay length) to make a varieble into BigInt we needd add n at the end of it
+
+		var BigInt(any name) = 1234567865432456754n;
+
+// multiple ? and : :-
+			we can write multiple if else using ? and : how well lets 
+
+			age = 20;
+			let message = age<4 ? "baby": age<20 && age >4 : "young" : "old"
+
+// || and && opretors:-  
+			when using && opreator it must be kept in mind that the and opreator will find first falsy value and after it the execution will stop
+			alert(alert(1) && 0 && alert(3)); the executio will stop because alert(1) retrurns undefined and it considers it falls and execution stops 
+			while || opreator will get the first truthy value so lets see
+			alert(alert(1) || alert(2) || 1)) the program will continue upto 1 and display one because the rest will return false

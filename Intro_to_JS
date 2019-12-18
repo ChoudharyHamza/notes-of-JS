@@ -1,0 +1,9 @@
+
+
+
+	Intro to Javascript:-
+				javascript is a scripting langguage meaning that the the code from javascript can be executed as plain text and do not need any speacial preparation like the code
+	from langguages like c# require compailing first but js code does not need any compiling. but javascript is compiled  javscript is based on ECMAscript . ECMAscript (european computer 		  	  manifacturing asscociation script) is a scripting langguage based on javascript this association defined a standard for all the scripting langguages for langgauge consistancy.
+	javascript can be exexuted on any machine which has  a javascript engine and browsers are embeded with js virtual machine that execute the program.
+
+	javascript code needs to be written in <script> when writing it in the html file. it can be written in the body and the head tag depending upon the need.
