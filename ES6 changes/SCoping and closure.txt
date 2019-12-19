@@ -1,0 +1,29 @@
+
+
+
+Scope and closure
+
+so scope defines from where can a certain varieble can be accessed to put simply a function creates its own
+execution context and scope and a varieble defined in the function is not accessible outside the function. but any variable
+defined outside the function in the global enviroment can be accessed from any where as it becomes a part of the global
+scope and any function defined in global enviroment will have access to its scope.
+
+scope chain is a pointer to the vareible object.
+A varieble defined inside a function means that it can not be accessed outside the function but if we define another
+function inside the function then the inner function function will have the access to the scope of the outer function so
+the inner function can access all the variebles of the outside function this is called lexical scoping.
+
+so there are two scopes global and local 
+
+and local scope are further two types functional and block . functional is that a varieble cannot be accessed
+outside the function. and block  is a varieble defines between two curly brases is not accessible outside the berasis '{}'
+ but loops and switch(as they use '{}') do not define a new scope if we use var to declare the variebles but follow if we
+use let  so the block scope do not apply i is a subset of functional scope as when defining a function you have to use {}. 
+
+
+closure.
+
+Whenever you create a function within another function, you have created a closure. The inner function is the closure.
+This closure is usually returned so you can use the outer function's variables at a later time. to put simply when 
+we define a function within a function and return the inner function then variebles that are part of the outer function
+scope are saved and can be used later when we call the inner function as we might be using them in that function.

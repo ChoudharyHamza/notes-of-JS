@@ -1,0 +1,49 @@
+
+
+insertAdjacentHTML method :-
+				this method is used to add HTML code into the html file . it uses an element already
+ present in the html to use as referance as to where the code should be placed. once the element is defined the next step 
+is to define where the code is to be placed beside the specified element like weather it should be placed before the start
+ of the  element or end or after start or after end so the four postitons are:
+
+1. beforebegin
+2. afterbegin
+3. beforeend
+4. afterend
+
+
+document.quarrySelector('element').insertAdjacentHTML( 'position' , string in the form of varieble or defined here);
+
+the elemnt to usue as referance	     command            one for position    and finely string
+
+
+
+
+
+replace statement :-
+			this statement is used to replace a specific word in the string with the specified value the 
+statement will replace all the strings specified in the parameters
+
+stringvarieble                   .replace                  ('%hamza mubeen%',               'masif jahangir');
+
+the varieble containing string 	  statement      parameters   the string to replace          to replace with 
+								we use %% to make the 
+								string unique so only that 
+								part is replaced
+
+
+
+
+
+removechild() :-
+		this command is used to remove an element from the dom completly you can use id or class to identify the 
+object but it is better to use the id as it is unique for each element and the most oomportant part is that you can not 
+remove an element directly you have to go to the parent node of the target element and then you can use the remove child
+command to remove the child of that object so you can not delete an element directly
+
+syntax:-
+	elementToRemove = document.getElementById('id of the target element');
+	elementToRemove.parentNode.removeChild(elementToRemove);
+
+or
+	document.getElementById('id of the parent').removeChild('Child id');

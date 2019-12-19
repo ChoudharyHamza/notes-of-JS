@@ -1,0 +1,5 @@
+ClassList is a command used to deal with classes when using JS 
+
+add :- it simply adds one or more classes to the current accessed element element.
+remove :- it simply removes class from the currently accessed element.
+toggale :- toggle is used to when we want to remove the given class name if it is already there and add if not.

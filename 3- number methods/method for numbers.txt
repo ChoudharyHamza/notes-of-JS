@@ -1,0 +1,10 @@
+
+
+numberVarieble.toString();
+			this method is used to convert an number into a string.
+
+numberVarieble.Tofixed(digit telling upto how many numbers after decimal);
+							this method is used to show only the specified numbers after the decimal point and returns a string.
+
+Math.abs(number varieble); 
+			this methid is used to remove the the - or + sign with the numbers and returns an absolute number value.

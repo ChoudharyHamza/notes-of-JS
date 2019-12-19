@@ -1,0 +1,41 @@
+
+forEach loop method:-
+			it is very convinient loop method only available for arrays it calls a function for each value 
+present in the array and can pass up to 3 parameters which are item its index and finely the array.you can return
+it is very convinient as it can be used just like forin loop in python. and note unlike map which returns a new copy 
+of the array this method only returns undefined.
+
+syntx:- 
+	anyArray.forEach(function(currentItem, itsIndex, completeArrayitself){
+										any code can go here });
+NOTE:- you can call the function with only one or two parameters you do not need to write all three fi you dont need that
+like
+syntax:- anyArray.forEach(function(currentItem){
+						});
+
+NOTE:- you can also just use a call back function
+like 
+syntax:- anyArray.forEach(anyFunction)
+
+function anyFunction(item)
+{
+}
+
+
+map():- 
+	map method is another very useful array methid it is used almost like forEach loop having there paraneters but
+ the difference is that the it returns a new copyof the array and not undefined like the forEach loop to put simply the 
+map function will mutate the values and return the values in an array new array totaly unlike the faoreacch loop that 
+mutates the values of the original loop.
+
+syntax:
+
+var arr = [1,2,3,4,5]
+
+
+ var arr1 = arr.map(function(item){
+			item = item + item;
+			return item;
+			});
+console.log(arr1);
+conosle.log(arr);

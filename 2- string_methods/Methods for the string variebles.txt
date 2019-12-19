@@ -1,0 +1,15 @@
+
+
+string.length :-
+		this is not a method but more of a property and it tells us about the length of the string just like the length of the array.
+
+
+split():- this is a string method it is used to split the given string into multiple pieces and return an array of it.
+syntax:-
+var variableToStoreTheReturnedArray = string.split('what charater to use to split the string', limit in number);
+
+note :- (both the parameters are optional)
+	if we use ("") in the parameter then the method will split the string into each charater and if use (" ") then by
+spaces present between them.and if we omit this parameter then it will return an array with a single string.Optional. 
+An integer that specifies the number of splits, items after the split limit will not be included in the array.
+
