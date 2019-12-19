@@ -1,0 +1,12 @@
+
+
+
+	this keyword:-
+			the this keyword points to the object that is executing the current function. 
+			so every function has its owm this keyword whose value is set according to object
+			from where it is called. so whenever we define a function the value of this is changed
+			for a regular function call it points to the global object but for a method cal in a 
+			object it points to that object.
+`
+			important note:-
+				 but when we call a functsion in a method the value of this is again set to global object

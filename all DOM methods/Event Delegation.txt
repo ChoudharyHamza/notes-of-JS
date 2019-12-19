@@ -1,0 +1,14 @@
+
+
+event Delegation:-
+		 in the javascript there are some cases where the element in which we want to add the event is not present
+at the time we load the page or we are IN need to deal with a lot of sub elements and add an event listner to each of them.
+here comes a feature of java script handy in html when we initiate an event in an element it will bubble upto the the 
+parent element , then to the parent of the parent and so on...  so we can add an event to the parent element and then 
+by using the event.target feature to identify and get the element on which the event was initiated this is called event
+delegation also
+
+html traversing:-
+ 		we can travel and get parent or child elements by using property like childNode or parentNode or parentName
+this is called html traversing.
+

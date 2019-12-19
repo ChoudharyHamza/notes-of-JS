@@ -1,0 +1,21 @@
+
+isNaN method :-
+		it is a very convinient function as it helps in determining if the given varieble is a NAN(not a number)
+it is it will return true 
+
+isNAN(varieble to check)
+
+
+
+splice() :- 
+		it is an  array method and it is used to remove an element from the array and return the removed elements
+form the array it can also replace the element in of concern with a new element of chioce.
+
+syntax:-
+	arrayOfInterest.splice(indexOfElementToRemove , integerTellingHowManyToRemove, ElementToReplace);
+
+the first is  the index  of the element to remove and the second tells us the number of elements to remove after the index
+given and the last is the element to replace if needed and if need to replace multiple elments then just use mention them 
+with seperation of comma
+
+array.splice(2, 2, 'apple', 'mango',)

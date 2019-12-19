@@ -1,0 +1,20 @@
+
+	// ok so there are some things that you need to know when nameing object properties
+
+	//we all now the basic method for nameing an object property.let us say that we want to name the property with two words then we use quotes
+			var obj = {
+				"the Name": "Hamza"	}
+	// now let us say that we want the name to come from the a varieble the how we will do it 
+		var symbol = /;
+		var obj = {
+				[symbol]: "Hamza"	}
+	// now if we wanna can a property with twoword name or with varieble the we use
+		obj["the Name"];
+	// for varieble we can also do the same
+		obj[symbol];\
+
+
+	// there is a way to check if there is a property with the given key in object and why it is nessecary is because you will see that when we call a property that does not exist it will give 		   undefined and not an error so to check we use in opreator it take the key name as a string and returns true if present and false other wise
+	// the code will be like this     "property Name" in objectName
+
+	// we can also assign assign

@@ -1,0 +1,27 @@
+
+the iheritance in javascript works with the help of prototypes the prototype is the part of the object/constructor that we 
+want other objects to inheret or simply have an acces to..
+
+so the protype of a constructor is not only the prototype of the constructor itself but also of all its instances so every
+object is an instance of the global/universal object an the global object's prototype is null.
+
+each object created in javascript is a part of the universal object of the enviroment means all the objects created in
+javascript are instances of the universal object and inheret all the prototype properties of the universal object.
+
+so when we call a method in an object it will first look into its prototype and then it will move up to the prototype of
+its parent and look for the method in its protoype which can be the constructor or universal object. which gives us the 
+concept of scope chain.
+ 
+now when we create an object from the constructor the prototype of the constructor is not a part of the object but
+the object created has access to the prototpye of the constructor so the same code will not be copied because it remains 
+there and they can br accessed.
+
+the variebles containing objects do not contain the copy of the object but a refrence to the object where it sits so 
+unlike other primitive variebles that contain a copy of the value.
+
+when we pass an object to the function it passes referance not a new object so a change it will also cause change outside
+ the function.
+
+there are 2 methods to access the properties of the object 
+object.property;   or
+object['propety'];  this method is useful when the name of the propety is stored in a varieble in the form of string

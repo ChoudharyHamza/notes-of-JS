@@ -1,0 +1,15 @@
+
+
+difference between textcontent and innerhtml
+
+textcontent :- it can simple put the text(number, string, or value of varieble) into the html varieble.
+
+inner html:- this statement is used when we want to change some html code and give new html code in javascript.
+
+difference in callback function and anonimious function 
+
+callback function:- a function which is passed as a parameter to another function is called call back function and also
+                    do not add '()' at the end.
+anonimious function:- a function which is defined in the parameter of a function and is called an
+                       anonimious function
+

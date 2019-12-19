@@ -1,0 +1,28 @@
+
+
+  => function:-
+		SO ARROW functions are a new addition in the ES6 in older prectice we will specificlly us the function statement to define even a 
+ver small function in which we are just returning a statement but it is very easyu now how well just '=>' and it will work as a function statement
+By using arrow functions, we avoid having to type the function keyword, return keyword (it’s implicit in arrow functions), and curly brackets.
+
+syntax:-
+	(para, para1, para2) => {statement;}
+
+but it has many f=different syntaxes lets scheck them out
+
+	with no aprameter :   when using no parameters small brackets become very important
+
+				() => {SATEMENT;}
+
+	with 1 parameter : when using one parameter it is not neseceary to use the paraenthesis and if we are just returnig a simple satement then 
+			    it is also not nesecary to use the curly brakets and return.
+				let a =	para => a+1;
+	
+	when returning a object lliteral :  when using an object literal it is necessary to use a parenthesis and add the define the object in it
+				
+				let a = para1 => ( { b : para1 } )
+
+	important note:- when we use the arrow function then the value of this is not redefined like regular function for it just uses the parent
+			 value of this.
+
+		

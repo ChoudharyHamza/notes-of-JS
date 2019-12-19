@@ -1,0 +1,52 @@
+
+
+call, bind, apply methods 
+
+CALL funcntion :-
+		the call function is used to call a function and replace the this keywords value
+		to another object of your choice. To put simply it is used to borrow the methods
+		of the an object and use it as if it is a part of another object. But call function
+		just calls the function once and replace the value of this to specified funciton. we can
+		not store it in a varieble and use it later. for that we have bind.
+
+   If using with an object method then
+obj.methodname.call
+(the object to replace the value of this, called functions parameter, called functions parameter); 
+
+// The first is object name from which the method is being borrowed then the method name then the 
+call function decleration and then the parameters of call function, the very first parameter
+always need to be the object name that will replace the this value and then the parameters that
+function being called needs for execution.
+
+if the dealing with a function in the global context
+functionname.call
+(the object to replace the value of this, called function parameter, called function parameter);
+// The function name then the call function decleration and then the parameters of call functions
+The very first parameter always need to be the object name that will replace the this value and 
+then the parameters that function being called needs for execution.
+
+APPLY function:-
+		the apply function has the same functions as the call function but the only difference
+		is that the parameters passed for the function being called can be in the form of array
+		means we can pass the array as a parameters or all the parameter values can be in one
+		 single array
+
+if using with an object method then
+obj.methodname.call
+(the object to replace the value of this, array with all the parameter values); 
+// All the parameter values can be in the form of array or an array can be used as the parameter
+
+\
+BIND function :-
+		the bind function is used  just like the call function the only difference is that the
+		function being used is not called at the exact same time but can be put into a function expression and be called at a later time
+so it binds a copy of function to the function expression. the bind function can also be used when passing a function
+into a function with some parameters as it allows a new copy of the function to be passed and we can give the parameters
+into the function because as we all know callback function when passed into a function directly cannot have '()'.but the
+bind function makes it possible but when the bind is used we need to give the first parameter this if it is in some local
+context and null if it is the global context. 
+
+var name = obj.methodname.bind(the object to replace the value of this, all or some of  the parameter values);
+// another benifit of the bind function is that like any other function expression we do not need give all the parameters
+of the function when we bind it but can be given at a later time when we actually call it.
+

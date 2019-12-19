@@ -1,0 +1,8 @@
+difference between querySelector and getElementbyId
+
+getElementByid:- in this command we do not need to give # mark before the elements id as it only deals with the id's
+
+querySelector:- in this command can access both the classes and id's and for classes we use # and for classes we use .
+
+and another thing we can do in both is that we can change the the id or class name like ('current-'+var); and we need 
+to give the names in ''.

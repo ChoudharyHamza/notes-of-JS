@@ -73,3 +73,44 @@ let srn1= "srn";
 
 
 con1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function onBtn(e)
+{
+    e.value = asadullah 
+    console.log(e);
+}
+debugger
+document.getElementById("btn").addEventListener('click', () => {
+console.log("hamza");
+});

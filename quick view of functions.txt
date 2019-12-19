@@ -1,0 +1,14 @@
+
+
+so a function is also a object but instead of prototype they have scope chain which can be considered a type of 
+prototype chain and as we can pass a function or return a function as they are object we say javascript has first class 
+function
+
+we can pass a function to a function which are called callback functions but when we pass a function we do not 
+give parathesis after its name.because we do want to call it later not right now
+
+when we return a function we usualy store the code in the varieble and the retured function can have parameters and we do 
+not nessecarily need to pass parameter when we call the function which returns that function we can pass it later when
+we call the returned function.
+
+

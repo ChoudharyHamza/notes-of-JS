@@ -1,0 +1,7 @@
+
+
+
+using backticks '``' instead of qutation marks OR template litterals:-
+						in the ES5 we will use ''+varieble + '' method to add the varieble between the plain string now
+in ES6 we can use `string ${vareible} string` method to simply add variebles between them. this is the best method for concatination now. as it is easy just look
+at the code.

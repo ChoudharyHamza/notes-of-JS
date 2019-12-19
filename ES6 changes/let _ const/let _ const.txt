@@ -1,0 +1,24 @@
+
+
+
+
+ok so in ES6 the biggest thing that made  change to the develoment was
+
+let and const :-
+
+let :-
+	it works almost the same as the var statement but a new thing is that ES6 allows block scoping so if we define a 
+varieble in the '{}' then the varieble declare withi it with let will be only accessable in that block and not outside this is
+called block scoping and it is very useful as it reduces the erroring in naming the variebles. so let is block scoping 
+bound .
+
+const :- 
+	this satement is used to define a vareible whose value can not be changed and if you declare a 
+varieble with const and you dont give it a value then you can not assign a value to it in the later code it will stay undefined.
+the value of a const varielbe is unchangeable and cannot be redeclared that is why it is constant.and it is also blolck scoped.
+ 
+important note:-
+		we know the concept of hoisting meaning if we decalre a vareible anywhere before after bacuse hoisting declares all 
+vairbles at the very start of the execution. the value of the vareible will be 'undefined' if we are using var and calling it before
+assigning it value,but it will give an error undeclared vareible if it is declared with the let varieble meaning we can use a vareible
+before assiging it value when using var but not  when using let.

@@ -19,3 +19,26 @@
 			alert(alert(1) && 0 && alert(3)); the executio will stop because alert(1) retrurns undefined and it considers it falls and execution stops 
 			while || opreator will get the first truthy value so lets see
 			alert(alert(1) || alert(2) || 1)) the program will continue upto 1 and display one because the rest will return false
+
+// writing numbers with e:- 
+				in javascript we can say that e is exponential or simple 1*10^n so let us take example of two numbers
+
+					 var number = 1000000 or 1e6
+					 var decinum = 0.000001 or 1e-6
+// writing hexa or binary or octa numbers:-
+						so in javascript we can use hexadecimal numbers to represent numbers or alot of time colors so we want to write the anme of a number how can we do it
+
+							 for hexadecimal we use 0x like  var num = 0xff   
+							 for octadecimal we use 0o like var num = ox377
+							 for binary we use 0b var num = bx111111   // all the codes represent 255
+						we can also convert a number into hexa octa or binary for by using num.toString(base like 16, 8, 2)
+					
+// .. after a number or sting to call the methods:-
+							so if we use varieble we use num.toString() or we can use 123..toString() so if we are calling a method before a numbe we need to use  '..'  . 
+
+// compareing NaN with NaN:- 
+				will return false because NaN is speacial and it cannot be comapred with anything even itself.
+
+// strings are immutable :- 
+				the strings in the JS are immutable meaning that they are unchange able we cannot specificly change a character we need to define pr give a whole new string
+				if we want to take the text to next line using string just add \n it should do the trick
