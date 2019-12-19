@@ -1,7 +1,7 @@
 
 isNaN method :-
 		it is a very convinient function as it helps in determining if the given varieble is a NAN(not a number)
-it is it will return true 
+if it is it will return true as NaN cannot be compared explicitly if if or other methods 
 
 isNAN(varieble to check)
 

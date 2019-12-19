@@ -12,4 +12,22 @@ console.log(sym ==sym1); // give false
 
 //  note symbols dont auto convert like when adding a string and a number it will need to use toString()
 //  to convert into a string when we alert something it will first convert to string 
-console.log(sym); // this will never give us a symbol why well it is not techinicaly a symbol so woll just give Symbol("test")
+console.log(sym); // this will never give us a symbol why well it is not techinicaly a symbol so will just give Symbol("test")
+
+/* there can be two types of symbols
+ system symbols
+ golbal symbols
+ */
+
+// global symbols :-
+            /* there exist some already predefined symbols with predefined names so when we want a symbol to be 
+                accessed everywhere we want the we need to use global symbols for this we need to use following symtax */   
+                    var idSym = Symbol.for("id");/* this will check the golbal symbols for the name id if there is it will
+                                                    get it but if not it will create it and place in among others in the
+                                                    global registery 
+                                                                        */
+
+        // there is another method as well that does the reverse returns a name for global symbols
+        // its Symbol.keyFor(symbol);
+
+// system symbols :- are used by javascript internaly we can use them to fine tune our JS
