@@ -1,0 +1,55 @@
+
+
+	// so first lets just get general concepts of overrading and over loading then we will se =e how we will implement it into JS
+
+	// overloading :-	
+			overloading is having two function or methods with same name but different parameters in the same context (like a class) so that when we call a function 
+			with same name specific number of parameters we get different functions.
+	// over raiding:-	
+			 is actuallty the kind of different from overloading if we have to classes and both are connected by inheritance and both a same function with the same parameters 
+			so when we call the function specificly from the parent calss we get parent class function and when we specificly ask for the child class function we get the child
+			class function. and we say that the child class function is overrading parent class functions
+	
+	// now how do we implement bith in JS
+	
+	// overaiding in JS:-
+				well first and foremost in JS we can call a function irralivent of the numbers of arguments that we are passing because the parameters and arguments are considered two 				different things so you can pass 3 arguments to a function with two parameters and it will not show an error rather the execution will go smoothly so then comes the 					question how can we overload a function is JS does not allows us to create make a difference in calls on the number of arguments passed  well there is one method and 					that we pass an object as an optional parameter and add a check of the value of the object is not undefined then execute a specific piece of code.
+				we do not nessicarily need use an pbject we can use plain variebles as well if the hold a specific value then execute a piece of code.
+			
+				// like given
+				
+				function foo(a, b, opts) {
+					  // ...
+					  if (opts['porp'] !==undefined ) { /if test param exists, do something..  } 
+					}
+
+
+					foo(1, 2, {"method":"add"});
+					foo(3, 4, {"test":"equals", "bar":"tree"});
+				// or we can check there type and execute a specific piece of code depending upon the the type.
+
+				// like given 
+				
+				function CatStrings(p1, p2, p3)
+				{
+				  var s = p1;
+				  if(typeof p2 !== "undefined") {s += p2;}
+				  if(typeof p3 !== "undefined") {s += p3;}
+				  return s;
+				};
+
+				CatStrings("one");        // result = one
+				CatStrings("one",2);      // result = one2
+				CatStrings("one",2,true); // result = one2true\\
+
+
+
+polymorphism 
+null undefine
+primitive non primitive
+NaN
+precendence of opreators
+for in stores how i array
+for of
+function expression and functions
+

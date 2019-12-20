@@ -7,7 +7,7 @@
     // we want to assign values to the vareble of an array
     // in ES5
 
-    let arr = ['hamza', 22, 100];
+    let arr = ['hamza', 22, 100, 200];
 
     let name1 = arr[0];
     let age1 = arr[1];
@@ -17,7 +17,11 @@
     // note that when we are assigning the values of an array we use '[]'  and '{}' when we are assigning the value of an object
     // when using arrays with more values then we need just give the varibels up to value we need but we can only
     // access them in order not randomly 
+    // const [name, , age] = arr;            we will leave 22 and take 100
     const [name, age] = arr;
+    // we can aslo use a trick like get 2 or 3 first elements and the rest as an array using rest parameters
+    //   const [name, age,...numbers]        in this way we have two variebles but the rest as an  arrays
+    // and if there are some things in the middle that you do not need then just use double comma
 
     console.log(name +' '+age);
 }

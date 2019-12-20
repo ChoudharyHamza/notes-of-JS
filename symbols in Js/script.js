@@ -31,3 +31,22 @@ console.log(sym); // this will never give us a symbol why well it is not techini
         // its Symbol.keyFor(symbol);
 
 // system symbols :- are used by javascript internaly we can use them to fine tune our JS
+
+
+
+
+
+
+////
+
+
+function Con(a,b){
+
+    this.age = a;
+    this.birthday = b;
+     this.calcAge = () => 2019-this.birthday
+
+}
+
+var conCalma = new Con(21,1999);
+console.log(conCalma.calcAge());
