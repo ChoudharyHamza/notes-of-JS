@@ -7,7 +7,14 @@
         primitive value or an object name or array. look at the example.
     //  the maps a iteratable like arrays and poccess .size property like length in arrays and forEach and forOf
         loops as well
-    //  some common property of arrays 
+    //  maps compare for keys is the same as '===' assign meaning a key "2" if called like 2will return undefined
+    //  so if its a string its a string. and NaN can also be used as key cause in maps NaN === Nan;
+    //  also when using for of loop we can tell the loop to access the keys or the values like 
+    //  for(var key of aMap.key) or for(var value of aMap.value )
+
+    // also map preserves the order in which the values go in like arrays and unlike objects
+    //  some common property of maps
+
     name.set():-  to add a key and a corresponding value to it 
                 example:  name.set(key, value);
     name.get(key):-  is simply used to call a property/key just like objects
@@ -15,10 +22,13 @@
     name.has(key):-  is used to search a map for a key and returns true or false.
     name.delete(key):- is used to delete a key
     name.clear():- clears a map meaning deleting all values
+
+    we can also get a plain object from a map  using var aMap = Object.fromEntries(aMap.entries)
 */
 // to define a map you need to use map constructuor there is no literal way
-    const aMap = new Map(); //or simply     const  aMap = new Map({ (key, value), (key, value), (key, value) });
-    
+    const aMap = new Map(); //or simply     const  aMap = new Map([ [key, value], [key, value], [key, value] ]);
+    const aMap1 = new Map([ ['name', 'hamza'], ['class', 'bsIT'] ]);
+    console.log(aMap1);
     // then lets add some values using the .set method
     aMap.set('question', 'what is the most popular langguage on stack overflow');
     aMap.set(1, 'javascript');
@@ -101,3 +111,24 @@
     anyMap.set(b, 'watson');
     console.log(anyMap.get(a) +'  '+anyMap.get(b) );
 }
+
+
+
+
+
+
+
+
+
+// then there are set like map a set is a collection of iteratable like an array just that they do not allow the
+// value to repeat in it. and the set method in maps is replaced with add and there is no get the rest are the same
+var aSet = new Set();
+
+aSet.add('hamza');
+aSet.add('masif');
+aSet.add(1);
+console.log(aSet);
+
+
+
+

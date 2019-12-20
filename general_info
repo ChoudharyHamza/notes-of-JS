@@ -42,3 +42,11 @@
 // strings are immutable :- 
 				the strings in the JS are immutable meaning that they are unchange able we cannot specificly change a character we need to define pr give a whole new string
 				if we want to take the text to next line using string just add \n it should do the trick
+
+// the reason for adding new when calling a constructor:- 
+							well if we do not add new next to it like give
+							var obj = Cons();
+							then it will just consider it as a function call but if we add new before it it we cal the function and consider it an object and sets the 
+							the value of this inside that funtion to the new created object so it acts as if we called it inside an object and the values initialize in it 	 
+							are stored in the object
+

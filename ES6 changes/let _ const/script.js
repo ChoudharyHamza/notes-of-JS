@@ -23,9 +23,14 @@ code comment as it will give error so to check just remove the slashes*/
 code comment as it will give error so to check just remove the slashes */
 
     //console.log(firstNames);
+    // a const needs to be assigned value and deckared at the same time
 
-
-
+    // but when declared with const to store object or array we can change the values inside the array/object
+    // but we cannot reassign   a new object or array to it
+    const a = {a:"hamza", b:"mubeen"}
+    a.b="jahangir";
+    const ab;
+    console.log(a);
 
 
 

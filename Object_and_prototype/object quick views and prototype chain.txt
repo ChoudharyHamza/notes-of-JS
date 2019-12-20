@@ -25,3 +25,27 @@ when we pass an object to the function it passes referance not a new object so a
 there are 2 methods to access the properties of the object 
 object.property;   or
 object['propety'];  this method is useful when the name of the propety is stored in a varieble in the form of string
+
+using Object.keys we can get an array of all the keys in the object
+using Object.values we can get an array of all the values in the object
+using Object.entries we can get the key value pairs inside the array
+
+
+
+all object properties have three descripter flags that we can use to customize our prperties but to set them we need to use Object.defineProperties.
+
+Configurable: Specifies whether the property can be deleted or changed.
+
+Enumerable: Specifies whether the property can be returned in a for/in loop.
+
+Writable: Specifies whether the property can be changed.
+
+to set the flag we need to use the defineProperties method
+
+	 obj = {}
+	 Object.defineProperties(obj , "key"){
+		value:"haha",
+		enumerable : false,
+		writable: true
+}
+note that if by default the enumerable is on true so we make it false then we need to turn writable to true genreally by defualt all are tru but to be on safe side

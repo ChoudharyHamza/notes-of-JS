@@ -2,7 +2,7 @@
 
 difference between textcontent and innerhtml
 
-textcontent :- it can simple put the text(number, string, or value of varieble) into the html varieble.
+textcontent :- it can simple put the text(number, string, or value of varieble) into the html varieble or can return the text inside an element.
 
 inner html:- this statement is used when we want to change some html code and give new html code in javascript.
 

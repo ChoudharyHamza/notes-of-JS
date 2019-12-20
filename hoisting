@@ -1,0 +1,18 @@
+
+
+
+	Intro to hoisting :-
+				so hoisting is that when a block of code is to be executed in js then the first and fore most vareibles declaretions are moved to the top of the current execution context
+				all variable and function declarations are hoisted to the top of their scope. I should also add that variable declarations are processed before any code is executed. 
+				so we can accessa varieble or function even before we use it but for variables the value will be undefined it is only for vareibles declared with var variebles
+				declared with const and let cannot be hoisted so it will throw an error. in the same way the function declerations are also processed first so we can call a function 					even before we declare it but it is not the same story with function expressions why well because they are also just variebles in the end and as we now they will retrun
+				undefined and with '()' javascript will throw error. 
+
+				another important note is :-
+								
+							    Variable assignment takes precedence over function declaration
+							    Function declarations take precedence over variable declarations  
+				so if we assign a number value to a vareible and then later declare a function with the same name at the end the vareible will be number not function 
+				but if we declare it and do not assign a value it will be function and not undefine because function declaretion take precedence over varieble declaretion
+
+				as for classes they are not hoisted wether for class declaretions or class ecpression

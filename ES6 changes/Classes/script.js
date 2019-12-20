@@ -35,7 +35,7 @@ console.log(new Date().getFullYear());
 
 // now lets write the same code in ES6 using classes
 
-// class is like syntaxical sigar of function the parameters are passed in constructor
+// class is like syntaxical sugar of function the parameters are passed in constructor
 class Aperson
 {
     
@@ -50,7 +50,8 @@ class Aperson
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.job = job;
-        
+        // private props
+        var religion = "islam";
         // then methods 
         this.calcAge = function()
         {
@@ -74,4 +75,56 @@ jane.print();
 
 
 
+/* a common concept what is private and public function or vairebles
+    we can generally say that when we define a function/vareible in a way that it is accessable anywhere inside
+    and outside its context/boundary(mostly curly brases) and can be modified it is called public function/method
+    but we if define a function/ varieble in such a way that it is accessble inside its context/boundary only not
+    ouside it will be called private functions. there is also another concept of priviliged function/variebles 
+    and that is function/ varieble that has access to the private functions/ variebles and it itself is a public
+    function.  
 
+
+    so can we do the same thing in JS classes and function constructors 
+    defning publicly:-  
+                    every method/varieble that we define using this like "this.name = 'hamza' " becomes a 
+                    props of an object and the object is returned so we can say that the context is created at 
+                    the time of instance creation so we can say that the props of an object are public                             
+    defining privately : - 
+                            so every method that we define inside class or constructor without 'this' means that
+                            those methods cn only we accessed inside that class an not outside the class so 
+                            they are private
+    defining shared :-      
+                        so the methods we define in the prototype or outside the class constructor become the
+                        shared props as they can be accessed by other classes 
+
+*/
+
+// now we now the fact that we can define methods is inside a constructor in JS by just
+
+
+
+
+
+
+
+class one
+{
+    constructor(key)
+    {
+    this.key  = "key";
+    }
+    calc = ()=> {console.log(this.key)}
+}
+
+class two extends one
+{
+    constructor()
+    {
+        super();
+        this.lname = "mubeen";
+    }
+    
+}
+
+var a = new two();
+console.log(a.key);
